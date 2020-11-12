@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 반응형 웹에 사용되는 태그 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>BAGUNI PR</title>
     <script>
         alert('당신의 멋진 도전을 담아줄게요 -BAGUNI-');
@@ -15,20 +16,66 @@
      
     <!-- <form action=""></form> 밑에 코드를 폼 안에 넣어야 하는데 폼 링크를 아직 안정함 -->
     <fieldset>
+        <!-- required 안쓰고 넘어가면 안되게 해야 함 -->
         <legend>BAGUNI</legend>
         <tr>
             <td><label for="mail">아이디</label></td>
-            <td><input id="mail" type="email"/></td>
+            <td><input id="mail" type="email" placeholder="E-mail주소를 적어주세요." /></td>
+            
         </tr> 
         <br>
         <tr>
             <td><label for="password">비밀번호</label></td>
-            <td><input id="password" type="password"/></td>
+            <!-- 내용 수정 필요 -->
+            <td><input id="password" type="password" placeholder="저희가 비밀번호 조건을 적어뒀던가요?"/></td>
+            
         </tr>
         <br>
         <input type="submit" value="로그인" /> 
+        <!-- 회원가입 시 화면 전환해야함 -->
         <input type="button" value="회원가입" /> 
+        
     </fieldset>
-    <!-- 회원가입 화면 -->
+    <!-- 회원가입 화면 일단 div로 넣어 놓겠음-->
+    <div>
+        <!-- <form action=""></form> 밑에 코드를 폼 안에 넣어야 하는데 폼 링크를 아직 안정함 -->
+    <fieldset>
+        <!-- required 안쓰고 넘어가면 안되게 해야 함 -->
+        <legend>BAGUNI</legend>
+        <tr>
+            <td><label for="mail">아이디</label></td>
+            <td><input id="Fmail" type="email" placeholder="E-mail주소를 적어주세요." /></td>
+            <!-- 중복검사 해야함 (중복일 경우, 사용가능한 경우 모션 정해야 함) -->
+            <input type="button" value="중복확인" />
+        </tr> 
+        <br>
+        <tr>
+            <td><label for="password">비밀번호</label></td>
+            <!-- 내용 수정 필요 -->
+            <p>비밀번호 사용 조건은 ~~~입니다.</p>
+            <td><input id="Fpassword" type="password" placeholder="저희가 비밀번호 조건을 적어뒀던가요?"/></td>
+            <br>
+            <td><input id="FCheckPassword" type="password" placeholder="비밀번호 다시 입력 창"/></td>
+        </tr>
+        <br>
+        <!-- 회원가입버튼 누르면 회원가입 완료 됐다고 창or화면 띄워줘야함 -->
+        <input type="button" value="회원가입" /> 
+        
+    </fieldset>
+    </div>
+
+    <section>
+        <!-- 겉 옷 -->
+        <header>
+            <!-- 대가리 -->
+        </header>
+        <article>
+            <!-- 몸통 -->
+        </article>
+        <footer>
+            <!-- 발가락 -->
+        </footer>
+    </section>
+
 </body>
 </html>
